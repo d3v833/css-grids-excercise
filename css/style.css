@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Source Code Pro", monospace;
-  color: #c2c2c2;
+  color: #f7adad;
   font-weight: 300; }
 
 .container {
@@ -28,10 +28,12 @@ body {
   grid-row: 1 / -1; }
 
 .header {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  grid-column: full-start / col-end-6; }
 
 .realtors {
-  background-color: #c2c2c2; }
+  background-color: #c2c2c2;
+  grid-column: col-start-7 / full-end; }
 
 .features {
   background-color: #de0000;
@@ -44,7 +46,8 @@ body {
   background-color: #755252; }
 
 .homes {
-  background-color: #c2c2c2; }
+  background-color: #c2c2c2;
+  grid-column: center-start / center-end; }
 
 .gallery {
   background-color: #de0000;
