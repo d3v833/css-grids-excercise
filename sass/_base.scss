@@ -1,0 +1,43 @@
+// COLOR VARIABLES
+$color-primary: #de0000;
+$color-primary-dark: #755252;
+
+$color-secondary: #f7adad;
+
+$color-grey-light-1: #f5f5f5;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #757575;
+$color-grey-dark-2: #c2c2c2;
+
+// FONT VARIABLES
+$font-primary: "Source Code Pro", monospace;
+$font-display: "Roboto Mono", monospace;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start]repeat(
+      8,
+      minmax(min-content, 14rem)
+    ) [center-end]1fr [full-end];
+}

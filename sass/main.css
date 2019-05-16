@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  color: #c2c2c2;
+  font-weight: 300;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
+      grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+      grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  -ms-grid-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] (minmax(min-content, 14rem))[8] [center-end] 1fr [full-end];
+      grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, minmax(-webkit-min-content, 14rem)) [center-end] 1fr [full-end];
+      grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, minmax(min-content, 14rem)) [center-end] 1fr [full-end];
+}
+
+.sidebar {
+  background-color: #de0000;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+}
+
+.header {
+  background-color: #f5f5f5;
+}
+
+.realtors {
+  background-color: #c2c2c2;
+}
+
+.features {
+  background-color: #de0000;
+  grid-column: center-start / center-end;
+}
+
+.story__pictures {
+  background-color: #f5f5f5;
+}
+
+.story__content {
+  background-color: #755252;
+}
+
+.homes {
+  background-color: #c2c2c2;
+}
+
+.gallery {
+  background-color: #de0000;
+  grid-column: full-start / full-end;
+}
+
+.footer {
+  background-color: #757575;
+  grid-column: full-start / full-end;
+}
+/*# sourceMappingURL=main.css.map */
